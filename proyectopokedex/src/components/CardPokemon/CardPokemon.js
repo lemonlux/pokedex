@@ -2,11 +2,14 @@ import "./CardPokemon.css"
 
 const template = (pokemon) =>`
 
-<figure class="${pokemon?.typeOne}">
+<figure>
     <div class="pokemon-container">
         <img src=${pokemon?.image} alt=${pokemon?.name}/>
         <h3>${pokemon?.name}</h3>
-        <h4>${pokemon?.typeTwo}</h4>
+        <div class="class-container">
+        <h4 class="${pokemon?.typeOne}">${pokemon?.typeOne.toUpperCase()}</h4>
+        <h4 class="${pokemon?.typeTwo}">${pokemon?.typeTwo.toUpperCase()}</h4>
+        </div>
     </div>
     
 
