@@ -31,11 +31,10 @@ main{
   width: 100vw;
   min-height: 75vh;
   background-color: white;
-  padding-bottom: 12vh;
+  padding: 0 0 1rem 0;
 }
 
 footer{
-  position: fixed;
   bottom: 0;
   width: 100vw;
   height: 10vh;

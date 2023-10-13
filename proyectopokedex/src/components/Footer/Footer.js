@@ -1,7 +1,18 @@
 import "./Footer.css"
 
 const template = () =>  `
-<h3 class="footer">best <span>Pokemons</span> ever</h3>
+<div class ="footer-container">
+    <div class="search-footer">
+             <div>
+                    <label for="search">¿No encuentras un Pokemon?</label>
+            </div>
+             <div>
+                    <input type="search" name="search" id="search-input" placeHolder="Pikachu">
+                    <button type="button" id="search-button">🔎</button>
+
+             </div>
+     </div>
+ </div>
 `
 
 export const printTemplateFooter = () =>{

@@ -26,6 +26,7 @@ export const printTemplateGallery = () =>{
 const mappeoPokemon = (data) =>{
     const allPokemonMap = data.map((pokemon)=> ({
         name: pokemon.name,
+        // name: (pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)),
         image: pokemon.sprites?.front_default,
         backImage: pokemon.sprites?.back_default,
         typeOne: pokemon.types[0]?.type?.name,
